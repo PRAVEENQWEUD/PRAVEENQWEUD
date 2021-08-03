@@ -17,9 +17,9 @@ print("\t\033[1;31mNewAdvertiseingBot\n\n")
 print("\t\033[1;32m Script by \033[1;36mMr.comrade  \n\n")
 async def main():
 	client = amino.Client()    
-	email = input("Email:-phsdv99450@uxsolar.com")
-	password = input("Password:-123456")
-	msg = input("Advertising Message:-http://aminoapps.com/p/2g28tt")
+	email = input("Email:-")
+	password = input("Password:-")
+	msg = input("Advertising Message:-")
 	await client.login(email=email, password=password)
 	clients = await client.sub_clients(start=0, size=1000)
 	for x, name in enumerate(clients.name, 1):
